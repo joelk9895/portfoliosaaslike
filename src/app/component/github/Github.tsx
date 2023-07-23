@@ -1,6 +1,8 @@
 "use client"
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import "./github.css"
+import Image from 'next/image';
 
 interface GitHubStats {
   avatar_url: string;
@@ -22,7 +24,7 @@ const GitHubStatsCard: React.FC = () => {
 
   useEffect(() => {
     // Replace 'YOUR_GITHUB_ACCESS_TOKEN' with your GitHub Personal Access Token
-    const accessToken = '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';
+    const accessToken = process.env.NEXT_PUBLIC_GITHUB_ACCESS_TOKEN;
     const username = 'joelk9895';
 
     // Fetch user's GitHub stats
@@ -64,6 +66,7 @@ const GitHubStatsCard: React.FC = () => {
 
   return (
     <div className="github-stats-card">
+        <Image src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="github" width={50} height={50} />
       {stats.login && <h3>{stats.login}</h3>}
       {stats.public_repos && <p>Public Repositories: {stats.public_repos}</p>}
       {stats.followers && <p>Followers: {stats.followers}</p>}
@@ -72,7 +75,7 @@ const GitHubStatsCard: React.FC = () => {
       {/* Display the current working project based on last commit */}
       {currentWorkingProject.name && (
         <div>
-          <p>Current Working Project:</p>
+          <p>Currently working on:</p>
           <a href={currentWorkingProject.html_url} target="_blank" rel="noopener noreferrer">
             {currentWorkingProject.name}
           </a>

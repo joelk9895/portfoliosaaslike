@@ -14,13 +14,16 @@
     border-radius: 2rem;
     overflow: hidden;
     position: relative;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .map-overlay{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
     background: rgb(0, 255, 195);
     z-index: -1;
     border-radius: 2rem;

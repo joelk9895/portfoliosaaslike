@@ -1,0 +1,17 @@
+.github-stats-card{
+    width:250px;
+    height: 250px;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.github-stats-card a{
+    color: black;
+    text-decoration: none;
+}

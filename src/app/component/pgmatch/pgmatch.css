@@ -1,0 +1,42 @@
+.opiniobg{
+    width: 500px;
+    height: auto;
+    background: white;
+    transform: rotateZ(-20deg);
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+.pgmatch{
+    width: 250px;
+    height: 520px;
+    background: rgb(249, 152, 160);
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    grid-column: 3;
+    grid-row: 2;
+}
+.circular-bg-pgmatch{
+    width: 250px;
+    height: 250px;
+    background: rgb(246, 225, 150);
+    border-radius: 50%;
+    position: absolute;
+    top: -65px;
+    left: -125px;
+}
+.Link{
+    width: fit-content;
+    position: absolute;
+    bottom: 5%;
+    left: 7%;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
