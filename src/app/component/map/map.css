@@ -1,0 +1,44 @@
+.map-container{
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    mix-blend-mode: lighten;
+}
+#map-container{
+    border-radius: 2rem;
+}
+.map{
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+.map-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 255, 195);
+    z-index: -1;
+    border-radius: 2rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.map-image-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    cursor: pointer;
+    background: rgba(85, 180, 234, 0.416);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

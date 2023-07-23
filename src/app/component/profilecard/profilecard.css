@@ -1,0 +1,27 @@
+.profile-card{
+    width: 450px;
+    padding: 20px 30px;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile-image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.profile-card p{
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+.profile-card span{
+    font-size: 2rem;
+    font-family: 'Nerko One', cursive;
+    text-transform: lowercase;
+}
