@@ -12,8 +12,8 @@ const Profilecard = () => {
         className='profile-image'
         height={200}/>
    <p>
-        I'm <span>Joel</span>, a developer and a student from Kerala, India<br/>
-        I'm interested in Web Development, Machine Learning, Kernel Development, Music and Enterpreneurship.
+        I&apos;m <span>Joel</span>, a developer and student from Kerala, India<br/>
+        I&apos;m interested in Web Development, Machine Learning, Kernel Development, Music and Enterpreneurship.
    </p>
     </div>
   )
