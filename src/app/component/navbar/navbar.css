@@ -1,0 +1,57 @@
+nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 90vw;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+h1 {
+    background-color: hsla(0, 100%, 50%, 1);
+    background-image:
+        radial-gradient(at 40% 20%, hsla(28, 100%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Nerko One', cursive;
+    font-size: 3rem;
+    text-transform: lowercase;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+@media (max-width: 650px){
+    h1{
+        font-size: 1.5rem;
+    }
+    nav a{
+        font-size: 0.6rem;
+    }
+    .nav-links{
+        padding: 5px 10px;
+        gap: 15px;
+    }
+    .nav-links a{
+        font-size: 0.6rem;
+    }
+    .marker{
+        height: 26px;
+        top: 5px;
+    }
+  }

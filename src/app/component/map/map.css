@@ -45,3 +45,16 @@
     justify-content: center;
     align-items: center;
 }
+@media (max-width: 850px){
+    .map{
+        grid-column: 1;
+        grid-row: 2;
+    }
+  }
+  @media (max-width: 650px){
+    .map{
+        width: 175px;
+        height: 175px;
+    }
+  }
+    

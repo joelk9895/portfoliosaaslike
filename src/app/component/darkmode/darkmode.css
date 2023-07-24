@@ -6,6 +6,7 @@
     grid-row: 3/4;
     border-radius: 2rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.5s ease-in-out;
 }
 .mode-switch {
   display: flex;
@@ -139,5 +140,23 @@ input:checked + .slider:before {
   to {
     transform: rotate(0deg);
     transform-origin: 50% 30%;
+  }
+}
+@media (max-width: 1100px){
+  .mode-switch{
+      grid-column: 3;
+      grid-row: 2;
+  }
+}
+@media (max-width: 850px){
+  .mode-switch{
+      grid-column: 2;
+      grid-row: 2;
+  }
+}
+@media (max-width: 650px){
+  .mode-switch{
+     width: 175px;
+     height: 175px;
   }
 }

@@ -19,6 +19,7 @@
     border-radius: 2rem;
     z-index: 10;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.5s ease-in-out;
 }
 .circular-bg{
     width: 250px;
@@ -38,3 +39,33 @@
     padding: 10px 20px;
     border-radius: 50px;
 }
+@media (max-width: 1100px){
+    .opinio{
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+    .pgmatch{
+        grid-column: 2;
+    }
+  }
+
+  @media (max-width: 850px){
+    .opinio{
+        grid-column: 1;
+        grid-row: 4/6;
+    }
+  }
+
+  @media (max-width: 650px){
+    .opinio{
+       width: 175px;
+        height: 350px;
+    }
+    .opiniobg{
+        width: 350px;
+        height: auto;
+        top: 10%;
+        left: 20%;
+        position: absolute;
+    }
+  }

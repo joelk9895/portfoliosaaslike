@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body{
+
+body {
   /* background: rgb(252, 245, 245); */
   background: white;
   font-family: 'Poppins', sans-serif;
@@ -11,12 +12,13 @@ body{
   padding-inline: 10%;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.widget-holder{
+
+.widget-holder {
   width: 100%;
   display: grid;
   grid-template-columns: 250px 250px 250px 250px;
@@ -24,4 +26,30 @@ body{
   column-gap: 1rem;
   row-gap: 1rem;
   justify-content: center;
+  transition: all 0.5s ease-in-out; /* Add transition for smooth animation */
+}
+
+@media (max-width: 1200px) {
+  .widget-holder {
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px;
+  }
+}
+
+@media (max-width: 850px) {
+  .widget-holder {
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px 250px 250px 250px;
+  }
+}
+
+@media (max-width: 650px) {
+  .widget-holder {
+    grid-template-columns: 175px 175px;
+    grid-template-rows: 175px 175px 175px 175px 175px;
+  }
+}
+.hide{
+  opacity: 0.5;
+  filter: grayscale(100%);
 }

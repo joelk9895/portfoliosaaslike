@@ -1,4 +1,4 @@
-.opiniobg{
+.pgmatchbg{
     width: 500px;
     height: auto;
     background: white;
@@ -21,6 +21,7 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     grid-column: 3;
     grid-row: 2;
+    transition: all 0.5s ease-in-out;
 }
 .circular-bg-pgmatch{
     width: 250px;
@@ -40,3 +41,28 @@
     padding: 10px 20px;
     border-radius: 50px;
 }
+@media (max-width: 1100px){
+    .pgmatch{
+        grid-column: 2;
+    }
+  }
+  @media (max-width: 850px){
+    .pgmatch{
+        grid-column: 2;
+        grid-row: 4/6;
+    }
+  }
+    
+  @media (max-width: 650px){
+    .pgmatch{
+       width: 175px;
+        height: 350px;
+    }
+    .pgmatchbg{
+        width: 350px;
+        height: auto;
+        top: 10%;
+        left: 20%;
+        position: absolute;
+    }
+  }
