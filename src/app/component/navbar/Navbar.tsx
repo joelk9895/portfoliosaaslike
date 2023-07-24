@@ -1,9 +1,8 @@
 import React, { useEffect, useState, useContext } from 'react';
 import './navbar.css';
-import { NavLinksContext } from '../../utilties/context/Navroute';
 
 const Navbar: React.FC = () => {
-    
+
   return (
     <nav>
       <h1>Joel</h1>
